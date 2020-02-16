@@ -1,7 +1,6 @@
 # TO - DO
 
-- [ ] Write dummy content in html
-    - Don't work on menu content
+- [x] Write dummy content in html (Don't work on menu content)
 - [ ] Style desktop main layout using grid
 - [ ] Style mobile main layout using grid
 - [ ] Add colors

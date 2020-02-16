@@ -39,7 +39,8 @@ module.exports = function configGrunt(grunt) {
                     expand: true,
                     cwd: 'scss',
                     src: ['main.scss'],
-                    dest: siteDirectory
+                    dest: siteDirectory,
+                    ext: '.css'
                 }]
             }
         },

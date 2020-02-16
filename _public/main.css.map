@@ -1,6 +1,6 @@
 {
 	"version": 3,
-	"file": "main.scss",
+	"file": "main.css",
 	"sources": [
 		"../scss/main.scss"
 	],

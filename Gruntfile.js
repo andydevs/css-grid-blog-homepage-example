@@ -5,6 +5,7 @@
  * designed using CSS Grid
  */
 const sass = require('node-sass')
+const siteDirectory = '_public/'
 
 /**
  * Configure grunt
@@ -24,7 +25,7 @@ module.exports = function configGrunt(grunt) {
                     expand: true, 
                     cwd: 'js', 
                     src: ['**/*.js'], 
-                    dest: 'public/'
+                    dest: siteDirectory
                 }]
             }
         },
@@ -33,9 +34,23 @@ module.exports = function configGrunt(grunt) {
                 implementation: sass,
                 sourceMap: true
             },
-            dist: {
-                src: ['scss/main.scss'],
-                dest: 'public/main.css'
+            public: {
+                files: [{
+                    expand: true,
+                    cwd: 'scss',
+                    src: ['main.scss'],
+                    dest: siteDirectory
+                }]
+            }
+        },
+        copy: {
+            html: {
+                files: [{
+                    expand: true,
+                    cwd: 'html',
+                    src: '**/*.html',
+                    dest: siteDirectory
+                }]
             }
         },
         watch: {
@@ -51,15 +66,15 @@ module.exports = function configGrunt(grunt) {
                 tasks: ['sass']
             },
             html: {
-                files: ['public/**/*.html'],
-                tasks: []
+                files: ['html/**/*.html'],
+                tasks: ['copy']
             }
         },
         connect: {
             server: {
                 options: {
                     hostname: 'localhost',
-                    base: 'public',
+                    base: siteDirectory,
                     livereload: true,
                     open: true
                 }
@@ -72,9 +87,10 @@ module.exports = function configGrunt(grunt) {
     grunt.loadNpmTasks('grunt-babel')
     grunt.loadNpmTasks('grunt-contrib-watch')
     grunt.loadNpmTasks('grunt-contrib-connect')
+    grunt.loadNpmTasks('grunt-contrib-copy')
 
     // Register tasks
-    grunt.registerTask('build', ['babel', 'sass'])
+    grunt.registerTask('build', ['babel', 'sass', 'copy'])
     grunt.registerTask('devserver', ['build', 'connect', 'watch'])
     grunt.registerTask('default', ['build'])
 }

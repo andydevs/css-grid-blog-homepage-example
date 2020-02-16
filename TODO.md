@@ -1,8 +1,9 @@
 # TO - DO
 
 - [x] Write dummy content in html (Don't work on menu content)
-- [ ] Style desktop main layout using grid
+- [x] Style desktop main layout using grid
 - [ ] Style mobile main layout using grid
+- [ ] Style elements
 - [ ] Add colors
 - [ ] Add gradients
 - [ ] Add icons from fontawesome

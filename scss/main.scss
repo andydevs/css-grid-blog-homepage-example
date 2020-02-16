@@ -1,4 +1,11 @@
 .layout {
+    // Positioning
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    min-height: 100%;
+
     // CSS Grid
     display: grid;
     grid-template-rows: repeat(5, 1fr);

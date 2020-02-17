@@ -3,8 +3,8 @@
 - [x] Write dummy content in html (Don't work on menu content)
 - [x] Style desktop main layout using grid
 - [x] Style mobile main layout using grid
-- [ ] Style elements
-- [ ] Add colors
+- [x] Style elements
+- [x] Add colors
 - [ ] Add gradients
 - [ ] Add icons from fontawesome
 - [ ] Style desktop menu layout using nested grid

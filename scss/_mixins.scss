@@ -1,20 +1,48 @@
-@mixin on-mobile {
-    @media only screen and (max-width: $responsive-mobile-size) {
-        @content;
-    }
-}
+/*
+CSS Grid Blog Homepage Example
 
+Experiments in using CSS grid to create responsive websites
+
+Author:  Anshul Kharbanda
+Created: 2 - 17 - 2020
+*/
+
+/*
+Run block of code on tablet
+*/
 @mixin on-tablet {
     @media only screen and (max-width: $responsive-tablet-size) {
         @content;
     }
 }
 
+/*
+Run block of code on mobile
+*/
+@mixin on-mobile {
+    @media only screen and (max-width: $responsive-mobile-size) {
+        @content;
+    }
+}
+
+/*
+NOTE: on-tablet block must always come BEFORE on-mobile block. Otherwise
+on-tablet will overwrite on-mobile even on mobile devices.
+*/
+
+/*
+Style entire post snippet based on given color
+*/
 @mixin colored-snippet($color) {
+    // Background color
     background-image: linear-gradient(45deg, lighten($color, 8%), $color);
+
+    // Title color
     .title {
         color: darken($color: $color, $amount: 25%);
     }
+
+    // Button color (and hover color)
     .button {
         background-color: darken($color: $color, $amount: 20%);
         color: white;

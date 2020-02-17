@@ -1,8 +1,19 @@
+/*
+CSS Grid Blog Homepage Example
+
+Experiments in using CSS grid to create responsive websites
+
+Author:  Anshul Kharbanda
+Created: 2 - 17 - 2020
+*/
+
 // Font awesome
 $fa-font-path: "/fonts";
 @import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 @import "./node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
+// Imports
 @import "variables";
 @import "mixins";
 @import "misc";

@@ -1,3 +1,16 @@
+/*
+CSS Grid Blog Homepage Example
+
+Experiments in using CSS grid to create responsive websites
+
+Author:  Anshul Kharbanda
+Created: 2 - 17 - 2020
+*/
+
+/*
+Menu bar/box. Also uses CSS Grid to control position of
+title and icons.
+*/
 .menu {
     // Grid area
     grid-area: menu;
@@ -9,7 +22,7 @@
     background-image: linear-gradient(45deg, lighten($menu-background, 5%), $menu-background);
     color: white;
 
-    // Create grid layout
+    // Desktop layout
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
@@ -19,7 +32,7 @@
         "title  title  icon-2"
         "icon-3 icon-4 icon-5";
 
-    // Tablet styling
+    // Tablet layout
     @include on-tablet {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
@@ -30,7 +43,7 @@
             "icon-2 icon-3 icon-4 icon-5";
     }
 
-    // Mobile styling
+    // Mobile layout
     @include on-mobile {
         display: grid;
         grid-template-rows: repeat(2, auto);
@@ -41,11 +54,13 @@
             "icon-1 icon-2 icon-3 icon-4 icon-5";
     }
 
+    // Menu title
     .title {
         grid-area: title;
         margin: $spacing-unit;
     }
 
+    // Menu icons
     @for $i from 1 through 5 {
         .icon-#{i} {
             grid-area: icon-#{i};

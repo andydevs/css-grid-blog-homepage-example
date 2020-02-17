@@ -1,9 +1,24 @@
+/*
+CSS Grid Blog Homepage Example
+
+Experiments in using CSS grid to create responsive websites
+
+Author:  Anshul Kharbanda
+Created: 2 - 17 - 2020
+*/
+
+// Control spacing of components in style
 $spacing-unit: 12pt !default;
+
+// Control border radius of .button buttons
 $button-border-radius: 8pt !default;
 
+// Control responsive breakpoints for mobile and tablet
 $responsive-mobile-size: 830px !default;
 $responsive-tablet-size: 1200px !default;
 
+// Control background colors for menu and 
+// main, second and third post snippets
 $menu-background: #444 !default;
 $main-background: gold !default;
 $second-backgrounds: 
@@ -13,5 +28,6 @@ $third-backgrounds:
     pink lavender violet turquoise 
     teal slateblue darkolivegreen slategray !default;
 
+// Control font
 $font-family: "Calibri Light", sans-serif !default;
 $font-size: 14pt !default;

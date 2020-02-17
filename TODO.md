@@ -9,3 +9,4 @@
 - [ ] Add icons from fontawesome
 - [ ] Style desktop menu layout using nested grid
 - [ ] Style mobile main layout using nested grid
+- [ ] Add tablet layout

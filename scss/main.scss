@@ -1,10 +1,14 @@
 $menu-background: #444;
 $main-background: gold;
-$second-backgrounds: tomato dodgerblue mediumseagreen;
-$third-backgrounds: lightcoral sienna indianred orange pink lavender violet turquoise teal slateblue darkolivegreen slategray;
+$second-backgrounds: 
+    tomato dodgerblue mediumseagreen;
+$third-backgrounds: 
+    lightcoral sienna indianred orange 
+    pink lavender violet turquoise 
+    teal slateblue darkolivegreen slategray;
 
 @mixin colored-snippet($color) {
-    background-color: $color;
+    background-image: linear-gradient(-45deg, lighten($color, 8%), $color);
     .title {
         color: darken($color: $color, $amount: 25%);
     }

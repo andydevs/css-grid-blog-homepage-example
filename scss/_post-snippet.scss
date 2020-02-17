@@ -1,0 +1,65 @@
+.post-snippet {
+    // Spacing
+    padding: 12pt;
+
+    // Layout
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "title" "snippet" "buttons";
+
+    // Mobile
+    @include on-mobile {
+        justify-items: stretch;
+    }
+
+    .title {
+        grid-area: title;
+
+        @include on-mobile {
+            text-align: center;
+        }
+    }
+
+    .snippet {
+        grid-area: snippet;
+    }
+
+    .buttons {
+        grid-area: buttons;
+        text-align: right;
+        display: block;
+
+        @include on-mobile {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+            justify-items: stretch;
+
+            // Align text
+            text-align: center;
+        }
+    }
+}
+
+// Main
+.main {
+    grid-area: main;
+    @include colored-snippet($main-background);
+}
+
+// Second loop
+@for $i from 1 through 3 {
+    .second-#{$i} {
+        grid-area: second-#{$i};
+        @include colored-snippet(nth($second-backgrounds, $i));
+    }
+}
+
+// Third loop
+@for $i from 1 through 12 {
+    .third-#{$i} {
+        grid-area: third-#{$i};
+        @include colored-snippet(nth($third-backgrounds, $i));
+    }
+}

@@ -1,8 +1,8 @@
 .button {
     // Sizing
     text-decoration: none;
-    padding: 6pt 12pt;
-    border-radius: 8pt;
+    padding: $spacing-unit/2 $spacing-unit;
+    border-radius: $button-border-radius;
     
     // Coloring
     color: black;

@@ -4507,7 +4507,7 @@ readers do not read off random characters that represent icons */
       grid-template-areas: "title  title  title  title  title" "icon-1 icon-2 icon-3 icon-4 icon-5"; } }
   .menu .title {
     grid-area: title;
-    margin: 16pt; }
+    margin: 12pt; }
   .menu .icon-i {
     grid-area: icon-i; }
   .menu .icon-i {

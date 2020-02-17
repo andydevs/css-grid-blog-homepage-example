@@ -13,5 +13,5 @@
 - [x] Get rid of Javascript
 - [x] Add extra content
 - [x] Add tablet layout
-- [ ] Separate SCSS code
-- [ ] Add comments
+- [x] Separate SCSS code
+- [x] Add comments

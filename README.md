@@ -1,6 +1,14 @@
 CSS Grid Blog Homepage Example
 =================================================================
 
+Experiments in using CSS grid to create responsive websites
+
+![Desktop](./doc-images/grid-desktop.jpg)
+
+![Tablet](./doc-images/grid-tablet.jpg)
+
+![Mobile](./doc-images/grid-mobile.jpg)
+
 [View the live website](https://css-grid-blog-homepage-example.netlify.com/)
 
 Development

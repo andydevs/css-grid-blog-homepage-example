@@ -12,6 +12,6 @@
 - [x] Center post-snippet content on mobile
 - [x] Get rid of Javascript
 - [x] Add extra content
-- [ ] Add tablet layout
+- [x] Add tablet layout
 - [ ] Separate SCSS code
 - [ ] Add comments

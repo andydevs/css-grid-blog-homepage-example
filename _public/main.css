@@ -9,7 +9,7 @@
   grid-template-columns: repeat(9, 1fr);
   grid-template-areas: "main     main     main     second-1 second-1 second-1 second-1 menu     menu" "main     main     main     second-1 second-1 second-1 second-1 menu     menu" "main     main     main     second-2 second-2 third-1  third-2  third-3  third-4" "second-3 second-3 second-3 second-2 second-2 third-5  third-6  third-7  third-8" "second-3 second-3 second-3 second-2 second-2 third-9  third-10 third-11 third-12";
   font-family: "Calibri Light", sans-serif;
-  font-size: 12pt; }
+  font-size: 14pt; }
   @media only screen and (max-width: 760px) {
     .layout {
       display: grid;
@@ -48,65 +48,177 @@
 .main {
   grid-area: main;
   background-color: gold; }
+  .main .title {
+    color: #806c00; }
+  .main .button {
+    background-color: #998100;
+    color: white; }
+    .main .button:hover {
+      background-color: #665600; }
 
 .second-1 {
   grid-area: second-1;
   background-color: tomato; }
+  .second-1 .title {
+    color: #c71e00; }
+  .second-1 .button {
+    background-color: #e02200;
+    color: white; }
+    .second-1 .button:hover {
+      background-color: #ad1a00; }
 
 .second-2 {
   grid-area: second-2;
   background-color: dodgerblue; }
+  .second-2 .title {
+    color: #00509e; }
+  .second-2 .button {
+    background-color: #005db7;
+    color: white; }
+    .second-2 .button:hover {
+      background-color: #004384; }
 
 .second-3 {
   grid-area: second-3;
   background-color: mediumseagreen; }
+  .second-3 .title {
+    color: #1c5435; }
+  .second-3 .button {
+    background-color: #226741;
+    color: white; }
+    .second-3 .button:hover {
+      background-color: #164029; }
 
 .third-1 {
   grid-area: third-1;
   background-color: lightcoral; }
+  .third-1 .title {
+    color: #d71919; }
+  .third-1 .button {
+    background-color: #e52525;
+    color: white; }
+    .third-1 .button:hover {
+      background-color: #c01717; }
 
 .third-2 {
   grid-area: third-2;
-  background-color: khaki; }
+  background-color: sienna; }
+  .third-2 .title {
+    color: #3c1f11; }
+  .third-2 .button {
+    background-color: #502917;
+    color: white; }
+    .third-2 .button:hover {
+      background-color: #29150b; }
 
 .third-3 {
   grid-area: third-3;
-  background-color: moccasin; }
+  background-color: indianred; }
+  .third-3 .title {
+    color: #822828; }
+  .third-3 .button {
+    background-color: #952e2e;
+    color: white; }
+    .third-3 .button:hover {
+      background-color: #6e2222; }
 
 .third-4 {
   grid-area: third-4;
   background-color: orange; }
+  .third-4 .title {
+    color: #805300; }
+  .third-4 .button {
+    background-color: #996300;
+    color: white; }
+    .third-4 .button:hover {
+      background-color: #664200; }
 
 .third-5 {
   grid-area: third-5;
   background-color: pink; }
+  .third-5 .title {
+    color: #ff4162; }
+  .third-5 .button {
+    background-color: #ff5a77;
+    color: white; }
+    .third-5 .button:hover {
+      background-color: #ff274d; }
 
 .third-6 {
   grid-area: third-6;
   background-color: lavender; }
+  .third-6 .title {
+    color: #7c7ce5; }
+  .third-6 .button {
+    background-color: #9191e9;
+    color: white; }
+    .third-6 .button:hover {
+      background-color: #6767e1; }
 
 .third-7 {
   grid-area: third-7;
   background-color: violet; }
+  .third-7 .title {
+    color: #d41dd4; }
+  .third-7 .button {
+    background-color: #e228e2;
+    color: white; }
+    .third-7 .button:hover {
+      background-color: #bd1abd; }
 
 .third-8 {
   grid-area: third-8;
   background-color: turquoise; }
+  .third-8 .title {
+    color: #168a7f; }
+  .third-8 .button {
+    background-color: #1aa093;
+    color: white; }
+    .third-8 .button:hover {
+      background-color: #13746a; }
 
 .third-9 {
   grid-area: third-9;
   background-color: teal; }
+  .third-9 .title {
+    color: #000101; }
+  .third-9 .button {
+    background-color: #001a1a;
+    color: white; }
+    .third-9 .button:hover {
+      background-color: black; }
 
 .third-10 {
   grid-area: third-10;
   background-color: slateblue; }
+  .third-10 .title {
+    color: #332781; }
+  .third-10 .button {
+    background-color: #3b2d94;
+    color: white; }
+    .third-10 .button:hover {
+      background-color: #2c216d; }
 
 .third-11 {
   grid-area: third-11;
   background-color: darkolivegreen; }
+  .third-11 .title {
+    color: #0f1208; }
+  .third-11 .button {
+    background-color: #1d2410;
+    color: white; }
+    .third-11 .button:hover {
+      background-color: #010100; }
 
 .third-12 {
   grid-area: third-12;
   background-color: slategray; }
+  .third-12 .title {
+    color: #384048; }
+  .third-12 .button {
+    background-color: #434d57;
+    color: white; }
+    .third-12 .button:hover {
+      background-color: #2d343a; }
 
 /*# sourceMappingURL=main.css.map */

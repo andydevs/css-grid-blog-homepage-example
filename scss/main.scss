@@ -1,7 +1,21 @@
 $menu-background: #444;
 $main-background: gold;
 $second-backgrounds: tomato dodgerblue mediumseagreen;
-$third-backgrounds: lightcoral khaki moccasin orange pink lavender violet turquoise teal slateblue darkolivegreen slategray;
+$third-backgrounds: lightcoral sienna indianred orange pink lavender violet turquoise teal slateblue darkolivegreen slategray;
+
+@mixin colored-snippet($color) {
+    background-color: $color;
+    .title {
+        color: darken($color: $color, $amount: 25%);
+    }
+    .button {
+        background-color: darken($color: $color, $amount: 20%);
+        color: white;
+        &:hover {
+            background-color: darken($color: $color, $amount: 30%);
+        }
+    }
+}
 
 .layout {
     // Positioning
@@ -49,7 +63,7 @@ $third-backgrounds: lightcoral khaki moccasin orange pink lavender violet turquo
 
     // Font styling
     font-family: "Calibri Light", sans-serif;
-    font-size: 12pt;
+    font-size: 14pt;
 }
 
 .post-snippet {
@@ -103,18 +117,14 @@ $third-backgrounds: lightcoral khaki moccasin orange pink lavender violet turquo
 // Main
 .main {
     grid-area: main;
-    
-    // Coloring!
-    background-color: $main-background;
+    @include colored-snippet($main-background);
 }
 
 // Second loop
 @for $i from 1 through 3 {
     .second-#{$i} {
         grid-area: second-#{$i};
-
-        // Coloring!
-        background-color: nth($list: $second-backgrounds, $n: $i);
+        @include colored-snippet(nth($second-backgrounds, $i));
     }
 }
 
@@ -123,8 +133,6 @@ $third-backgrounds: lightcoral khaki moccasin orange pink lavender violet turquo
 @for $i from 1 through 12 {
     .third-#{$i} {
         grid-area: third-#{$i};
-
-        // Coloring
-        background-color: nth($list: $third-backgrounds, $n: $i);
+        @include colored-snippet(nth($third-backgrounds, $i));
     }
 }

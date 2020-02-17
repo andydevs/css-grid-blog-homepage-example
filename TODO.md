@@ -1,5 +1,7 @@
 # TO - DO
 
+## v1.0.0
+
 - [x] Write dummy content in html (Don't work on menu content)
 - [x] Style desktop main layout using grid
 - [x] Style mobile main layout using grid

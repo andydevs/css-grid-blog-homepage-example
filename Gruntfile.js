@@ -15,20 +15,6 @@ const siteDirectory = '_public/'
 module.exports = function configGrunt(grunt) {
     // Configure grunt
     grunt.initConfig({
-        babel: {
-            options: {
-                sourceMap: true,
-                presets: ['@babel/preset-env']
-            },
-            public: {
-                files: [{
-                    expand: true, 
-                    cwd: 'js', 
-                    src: ['**/*.js'], 
-                    dest: siteDirectory
-                }]
-            }
-        },
         sass: {
             options: {
                 implementation: sass,
@@ -66,10 +52,6 @@ module.exports = function configGrunt(grunt) {
             options: {
                 livereload: true
             },
-            babel: {
-                files: ['js/**/*.js'],
-                tasks: ['babel']
-            },
             scss: {
                 files: ['scss/**/*.scss'],
                 tasks: ['sass']
@@ -93,13 +75,12 @@ module.exports = function configGrunt(grunt) {
 
     // Load tasks
     grunt.loadNpmTasks('grunt-sass')
-    grunt.loadNpmTasks('grunt-babel')
     grunt.loadNpmTasks('grunt-contrib-watch')
     grunt.loadNpmTasks('grunt-contrib-connect')
     grunt.loadNpmTasks('grunt-contrib-copy')
 
     // Register tasks
-    grunt.registerTask('build', ['babel', 'sass', 'copy'])
+    grunt.registerTask('build', ['sass', 'copy'])
     grunt.registerTask('devserver', ['build', 'connect', 'watch'])
     grunt.registerTask('default', ['build'])
 }

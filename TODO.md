@@ -10,8 +10,8 @@
 - [x] Style desktop menu layout using nested grid
 - [x] Style mobile menu layout using nested grid
 - [x] Center post-snippet content on mobile
+- [x] Get rid of Javascript
 - [ ] Add extra content
 - [ ] Add tablet layout
-- [ ] Get rid of Javascript
 - [ ] Separate SCSS code
 - [ ] Add comments

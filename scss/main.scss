@@ -1,3 +1,8 @@
+$menu-background: #444;
+$main-background: gold;
+$second-backgrounds: tomato dodgerblue mediumseagreen;
+$third-backgrounds: lightcoral khaki moccasin orange pink lavender violet turquoise teal slateblue darkolivegreen slategray;
+
 .layout {
     // Positioning
     position: absolute;
@@ -89,20 +94,37 @@
 
 .menu {
     grid-area: menu;
+
+    // Coloring!
+    background-color: $menu-background;
 }
 
+
+// Main
 .main {
     grid-area: main;
+    
+    // Coloring!
+    background-color: $main-background;
 }
 
+// Second loop
 @for $i from 1 through 3 {
     .second-#{$i} {
         grid-area: second-#{$i};
+
+        // Coloring!
+        background-color: nth($list: $second-backgrounds, $n: $i);
     }
 }
 
+
+// Third loop
 @for $i from 1 through 12 {
     .third-#{$i} {
         grid-area: third-#{$i};
+
+        // Coloring
+        background-color: nth($list: $third-backgrounds, $n: $i);
     }
 }

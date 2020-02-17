@@ -42,54 +42,71 @@
     background-color: #aaa; }
 
 .menu {
-  grid-area: menu; }
+  grid-area: menu;
+  background-color: #444; }
 
 .main {
-  grid-area: main; }
+  grid-area: main;
+  background-color: gold; }
 
 .second-1 {
-  grid-area: second-1; }
+  grid-area: second-1;
+  background-color: tomato; }
 
 .second-2 {
-  grid-area: second-2; }
+  grid-area: second-2;
+  background-color: dodgerblue; }
 
 .second-3 {
-  grid-area: second-3; }
+  grid-area: second-3;
+  background-color: mediumseagreen; }
 
 .third-1 {
-  grid-area: third-1; }
+  grid-area: third-1;
+  background-color: lightcoral; }
 
 .third-2 {
-  grid-area: third-2; }
+  grid-area: third-2;
+  background-color: khaki; }
 
 .third-3 {
-  grid-area: third-3; }
+  grid-area: third-3;
+  background-color: moccasin; }
 
 .third-4 {
-  grid-area: third-4; }
+  grid-area: third-4;
+  background-color: orange; }
 
 .third-5 {
-  grid-area: third-5; }
+  grid-area: third-5;
+  background-color: pink; }
 
 .third-6 {
-  grid-area: third-6; }
+  grid-area: third-6;
+  background-color: lavender; }
 
 .third-7 {
-  grid-area: third-7; }
+  grid-area: third-7;
+  background-color: violet; }
 
 .third-8 {
-  grid-area: third-8; }
+  grid-area: third-8;
+  background-color: turquoise; }
 
 .third-9 {
-  grid-area: third-9; }
+  grid-area: third-9;
+  background-color: teal; }
 
 .third-10 {
-  grid-area: third-10; }
+  grid-area: third-10;
+  background-color: slateblue; }
 
 .third-11 {
-  grid-area: third-11; }
+  grid-area: third-11;
+  background-color: darkolivegreen; }
 
 .third-12 {
-  grid-area: third-12; }
+  grid-area: third-12;
+  background-color: slategray; }
 
 /*# sourceMappingURL=main.css.map */

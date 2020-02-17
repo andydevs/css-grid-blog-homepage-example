@@ -17,6 +17,10 @@ $button-border-radius: 8pt !default;
 $responsive-mobile-size: 830px !default;
 $responsive-tablet-size: 1200px !default;
 
+// Control the amount of second and third snippets
+$second-count: 3;
+$third-count: 12;
+
 // Control background colors for menu and 
 // main, second and third post snippets
 $menu-background: #444 !default;

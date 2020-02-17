@@ -68,7 +68,7 @@ Generic post snippet. Controls position of elements using CSS Grid.
 }
 
 // Loop makes second post snippets
-@for $i from 1 through 3 {
+@for $i from 1 through $second-count {
     .second-#{$i} {
         grid-area: second-#{$i};
         @include colored-snippet(nth($second-backgrounds, $i));
@@ -76,7 +76,7 @@ Generic post snippet. Controls position of elements using CSS Grid.
 }
 
 // Loop makes third post snippets
-@for $i from 1 through 12 {
+@for $i from 1 through $third-count {
     .third-#{$i} {
         grid-area: third-#{$i};
         @include colored-snippet(nth($third-backgrounds, $i));

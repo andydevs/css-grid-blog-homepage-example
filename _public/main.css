@@ -43,11 +43,29 @@
 
 .menu {
   grid-area: menu;
-  background-color: #444; }
+  padding: 12pt;
+  background-image: linear-gradient(45deg, #515151, #444);
+  color: white;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "title  title  icon-1" "title  title  icon-2" "icon-3 icon-4 icon-5"; }
+  .menu .title {
+    grid-area: title; }
+  .menu .icon-i {
+    grid-area: icon-i; }
+  .menu .icon-i {
+    grid-area: icon-i; }
+  .menu .icon-i {
+    grid-area: icon-i; }
+  .menu .icon-i {
+    grid-area: icon-i; }
+  .menu .icon-i {
+    grid-area: icon-i; }
 
 .main {
   grid-area: main;
-  background-image: linear-gradient(-45deg, #ffdd29, gold); }
+  background-image: linear-gradient(45deg, #ffdd29, gold); }
   .main .title {
     color: #806c00; }
   .main .button {
@@ -58,7 +76,7 @@
 
 .second-1 {
   grid-area: second-1;
-  background-image: linear-gradient(-45deg, #ff8670, tomato); }
+  background-image: linear-gradient(45deg, #ff8670, tomato); }
   .second-1 .title {
     color: #c71e00; }
   .second-1 .button {
@@ -69,7 +87,7 @@
 
 .second-2 {
   grid-area: second-2;
-  background-image: linear-gradient(-45deg, #47a4ff, dodgerblue); }
+  background-image: linear-gradient(45deg, #47a4ff, dodgerblue); }
   .second-2 .title {
     color: #00509e; }
   .second-2 .button {
@@ -80,7 +98,7 @@
 
 .second-3 {
   grid-area: second-3;
-  background-image: linear-gradient(-45deg, #53c586, mediumseagreen); }
+  background-image: linear-gradient(45deg, #53c586, mediumseagreen); }
   .second-3 .title {
     color: #1c5435; }
   .second-3 .button {
@@ -91,7 +109,7 @@
 
 .third-1 {
   grid-area: third-1;
-  background-image: linear-gradient(-45deg, #f4a4a4, lightcoral); }
+  background-image: linear-gradient(45deg, #f4a4a4, lightcoral); }
   .third-1 .title {
     color: #d71919; }
   .third-1 .button {
@@ -102,7 +120,7 @@
 
 .third-2 {
   grid-area: third-2;
-  background-image: linear-gradient(-45deg, #c06236, sienna); }
+  background-image: linear-gradient(45deg, #c06236, sienna); }
   .third-2 .title {
     color: #3c1f11; }
   .third-2 .button {
@@ -113,7 +131,7 @@
 
 .third-3 {
   grid-area: third-3;
-  background-image: linear-gradient(-45deg, #d77b7b, indianred); }
+  background-image: linear-gradient(45deg, #d77b7b, indianred); }
   .third-3 .title {
     color: #822828; }
   .third-3 .button {
@@ -124,7 +142,7 @@
 
 .third-4 {
   grid-area: third-4;
-  background-image: linear-gradient(-45deg, #ffb329, orange); }
+  background-image: linear-gradient(45deg, #ffb329, orange); }
   .third-4 .title {
     color: #805300; }
   .third-4 .button {
@@ -135,7 +153,7 @@
 
 .third-5 {
   grid-area: third-5;
-  background-image: linear-gradient(-45deg, #ffe9ed, pink); }
+  background-image: linear-gradient(45deg, #ffe9ed, pink); }
   .third-5 .title {
     color: #ff4162; }
   .third-5 .button {
@@ -146,7 +164,7 @@
 
 .third-6 {
   grid-area: third-6;
-  background-image: linear-gradient(-45deg, white, lavender); }
+  background-image: linear-gradient(45deg, white, lavender); }
   .third-6 .title {
     color: #7c7ce5; }
   .third-6 .button {
@@ -157,7 +175,7 @@
 
 .third-7 {
   grid-area: third-7;
-  background-image: linear-gradient(-45deg, #f3a6f3, violet); }
+  background-image: linear-gradient(45deg, #f3a6f3, violet); }
   .third-7 .title {
     color: #d41dd4; }
   .third-7 .button {
@@ -168,7 +186,7 @@
 
 .third-8 {
   grid-area: third-8;
-  background-image: linear-gradient(-45deg, #63e6d9, turquoise); }
+  background-image: linear-gradient(45deg, #63e6d9, turquoise); }
   .third-8 .title {
     color: #168a7f; }
   .third-8 .button {
@@ -179,7 +197,7 @@
 
 .third-9 {
   grid-area: third-9;
-  background-image: linear-gradient(-45deg, #00a9a9, teal); }
+  background-image: linear-gradient(45deg, #00a9a9, teal); }
   .third-9 .title {
     color: #000101; }
   .third-9 .button {
@@ -190,7 +208,7 @@
 
 .third-10 {
   grid-area: third-10;
-  background-image: linear-gradient(-45deg, #8679d6, slateblue); }
+  background-image: linear-gradient(45deg, #8679d6, slateblue); }
   .third-10 .title {
     color: #332781; }
   .third-10 .button {
@@ -201,7 +219,7 @@
 
 .third-11 {
   grid-area: third-11;
-  background-image: linear-gradient(-45deg, #6c873b, darkolivegreen); }
+  background-image: linear-gradient(45deg, #6c873b, darkolivegreen); }
   .third-11 .title {
     color: #0f1208; }
   .third-11 .button {
@@ -212,7 +230,7 @@
 
 .third-12 {
   grid-area: third-12;
-  background-image: linear-gradient(-45deg, #8794a2, slategray); }
+  background-image: linear-gradient(45deg, #8794a2, slategray); }
   .third-12 .title {
     color: #384048; }
   .third-12 .button {

@@ -139,3 +139,9 @@ $third-backgrounds:
         @include colored-snippet(nth($third-backgrounds, $i));
     }
 }
+
+// Font awesome
+$fa-font-path: "/fonts";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/brands.scss";

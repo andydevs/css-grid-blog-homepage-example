@@ -52,6 +52,14 @@ module.exports = function configGrunt(grunt) {
                     src: '**/*.html',
                     dest: siteDirectory
                 }]
+            },
+            fonts: {
+                files: [{
+                    expand: true,
+                    cwd: './node_modules/@fortawesome/fontawesome-free/webfonts',
+                    src: '*',
+                    dest: '_public/fonts'
+                }]
             }
         },
         watch: {

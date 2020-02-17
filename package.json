@@ -2,7 +2,13 @@
   "name": "css-grid-blog-homepage-example",
   "version": "0.0.0",
   "description": "Example of a homepage for a blog written in css grid",
-  "keywords": ["css-grid", "grid", "cssgrid", "blog", "css"],
+  "keywords": [
+    "css-grid",
+    "grid",
+    "cssgrid",
+    "blog",
+    "css"
+  ],
   "author": "Anshul Kharbanda",
   "license": "MIT",
   "devDependencies": {
@@ -16,5 +22,8 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-sass": "^3.1.0",
     "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1"
   }
 }

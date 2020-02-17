@@ -2,7 +2,7 @@
 
 - [x] Write dummy content in html (Don't work on menu content)
 - [x] Style desktop main layout using grid
-- [ ] Style mobile main layout using grid
+- [x] Style mobile main layout using grid
 - [ ] Style elements
 - [ ] Add colors
 - [ ] Add gradients

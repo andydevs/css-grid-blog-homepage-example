@@ -6,7 +6,8 @@
 - [x] Style elements
 - [x] Add colors
 - [x] Add gradients
-- [ ] Add icons from fontawesome
-- [ ] Style desktop menu layout using nested grid
+- [x] Add icons from fontawesome
+- [x] Style desktop menu layout using nested grid
 - [ ] Style mobile main layout using nested grid
+- [ ] Center post-snippet content on mobile
 - [ ] Add tablet layout

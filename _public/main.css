@@ -49,9 +49,11 @@
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
+  place-items: center;
   grid-template-areas: "title  title  icon-1" "title  title  icon-2" "icon-3 icon-4 icon-5"; }
   .menu .title {
-    grid-area: title; }
+    grid-area: title;
+    margin: 16pt; }
   .menu .icon-i {
     grid-area: icon-i; }
   .menu .icon-i {
@@ -62,6 +64,10 @@
     grid-area: icon-i; }
   .menu .icon-i {
     grid-area: icon-i; }
+
+.icon {
+  color: inherit;
+  font-size: 24pt; }
 
 .main {
   grid-area: main;

@@ -8,6 +8,8 @@
 - [x] Add gradients
 - [x] Add icons from fontawesome
 - [x] Style desktop menu layout using nested grid
-- [ ] Style mobile menu layout using nested grid
+- [x] Style mobile menu layout using nested grid
 - [ ] Center post-snippet content on mobile
 - [ ] Add tablet layout
+- [ ] Separate SCSS code
+- [ ] Get rid of Javascript

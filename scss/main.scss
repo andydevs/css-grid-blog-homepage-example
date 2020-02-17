@@ -46,13 +46,12 @@ $third-backgrounds:
     @media only screen and (max-width: 760px) {
         // CSS Grid
         display: grid;
-        grid-template-rows: repeat(12, 1fr);
+        grid-template-rows: auto 1.5fr repeat(3, 1fr) repeat(6, auto);
         grid-template-columns: repeat(2, 1fr);
 
         // Grid areas
         grid-template-areas: 
             "menu     menu"
-            "main     main"
             "main     main"
             "second-1 second-1"
             "second-2 second-2"

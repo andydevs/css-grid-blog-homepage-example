@@ -19,6 +19,7 @@
         "second-3 second-3 second-3 second-2 second-2 third-5  third-6  third-7  third-8"
         "second-3 second-3 second-3 second-2 second-2 third-9  third-10 third-11 third-12";
 
+    // Grid areas on mobile
     @media only screen and (max-width: 760px) {
         // CSS Grid
         display: grid;
@@ -39,6 +40,50 @@
             "third-7  third-8"
             "third-9  third-10"
             "third-11 third-12";
+    }
+
+    // Font styling
+    font-family: "Calibri Light", sans-serif;
+    font-size: 12pt;
+}
+
+.post-snippet {
+    // Spacing
+    padding: 12pt;
+
+    // Layout
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "title" "snippet" "buttons";
+
+    .title {
+        grid-area: title;
+    }
+
+    .snippet {
+        grid-area: snippet;
+    }
+
+    .buttons {
+        grid-area: buttons;
+        text-align: right;
+    }
+}
+
+.button {
+    text-decoration: none;
+    padding: 6pt 12pt;
+    border-radius: 8pt;
+    
+    // Coloring
+    color: black;
+    background-color: #ccc;
+
+    // Hover effect
+    transition: background-color 0.5s;
+    &:hover {
+        background-color: #aaa;
     }
 }
 

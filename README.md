@@ -1,6 +1,8 @@
 CSS Grid Blog Homepage Example
 =================================================================
 
+[View the live website](https://css-grid-blog-homepage-example.netlify.com/)
+
 Development
 -----------------------------------------------------------------
 

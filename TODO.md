@@ -5,7 +5,7 @@
 - [x] Style mobile main layout using grid
 - [x] Style elements
 - [x] Add colors
-- [ ] Add gradients
+- [x] Add gradients
 - [ ] Add icons from fontawesome
 - [ ] Style desktop menu layout using nested grid
 - [ ] Style mobile main layout using nested grid

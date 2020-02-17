@@ -23,13 +23,27 @@
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   grid-template-areas: "title" "snippet" "buttons"; }
+  @media only screen and (max-width: 830px) {
+    .post-snippet {
+      justify-items: stretch; } }
   .post-snippet .title {
     grid-area: title; }
+    @media only screen and (max-width: 830px) {
+      .post-snippet .title {
+        text-align: center; } }
   .post-snippet .snippet {
     grid-area: snippet; }
   .post-snippet .buttons {
     grid-area: buttons;
-    text-align: right; }
+    text-align: right;
+    display: block; }
+    @media only screen and (max-width: 830px) {
+      .post-snippet .buttons {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        justify-items: stretch;
+        text-align: center; } }
 
 .button {
   text-decoration: none;

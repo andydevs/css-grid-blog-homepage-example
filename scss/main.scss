@@ -86,8 +86,17 @@ $third-backgrounds:
     grid-template-columns: 1fr;
     grid-template-areas: "title" "snippet" "buttons";
 
+    // Mobile
+    @include on-mobile {
+        justify-items: stretch;
+    }
+
     .title {
         grid-area: title;
+
+        @include on-mobile {
+            text-align: center;
+        }
     }
 
     .snippet {
@@ -97,10 +106,22 @@ $third-backgrounds:
     .buttons {
         grid-area: buttons;
         text-align: right;
+        display: block;
+
+        @include on-mobile {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+            justify-items: stretch;
+
+            // Align text
+            text-align: center;
+        }
     }
 }
 
 .button {
+    // Sizing
     text-decoration: none;
     padding: 6pt 12pt;
     border-radius: 8pt;

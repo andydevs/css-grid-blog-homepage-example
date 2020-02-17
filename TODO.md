@@ -9,7 +9,9 @@
 - [x] Add icons from fontawesome
 - [x] Style desktop menu layout using nested grid
 - [x] Style mobile menu layout using nested grid
-- [ ] Center post-snippet content on mobile
+- [x] Center post-snippet content on mobile
+- [ ] Add extra content
 - [ ] Add tablet layout
-- [ ] Separate SCSS code
 - [ ] Get rid of Javascript
+- [ ] Separate SCSS code
+- [ ] Add comments

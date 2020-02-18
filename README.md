@@ -1,6 +1,10 @@
 CSS Grid Blog Homepage Example
 =================================================================
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d7a6d928-a965-42d4-8755-8a49b693cffe/deploy-status)](https://app.netlify.com/sites/css-grid-blog-homepage-example/deploys)
+
+[View the live website](https://css-grid-blog-homepage-example.netlify.com/)
+
 Experiments in using CSS grid to create responsive websites
 
 ![Desktop](./doc-images/grid-desktop.jpg)
@@ -8,8 +12,6 @@ Experiments in using CSS grid to create responsive websites
 ![Tablet](./doc-images/grid-tablet.jpg)
 
 ![Mobile](./doc-images/grid-mobile.jpg)
-
-[View the live website](https://css-grid-blog-homepage-example.netlify.com/)
 
 Development
 -----------------------------------------------------------------

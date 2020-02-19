@@ -1,10 +1,13 @@
 # TO - DO
 
+## v1.2.0
+
+- [ ] Add selector for older browsers
+
 ## v1.1.0
 
 - [x] Add footer to website
 - [x] Change grunt watch html config to only run copy:html when html changes
-- [ ] Add selector for older browsers
 - [ ] Change the menu from `div` to `header`
 
 ## v1.0.0

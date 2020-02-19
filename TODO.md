@@ -8,7 +8,6 @@
 
 - [x] Add footer to website
 - [x] Change grunt watch html config to only run copy:html when html changes
-- [ ] Change the menu from `div` to `header`
 
 ## v1.0.0
 

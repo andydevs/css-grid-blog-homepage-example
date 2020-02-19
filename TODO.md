@@ -1,5 +1,9 @@
 # TODO
 
+## v1.1.1
+
+- [x] Fixed mobile layout to fit content
+
 ## v1.1.0
 
 - [x] Add footer to website

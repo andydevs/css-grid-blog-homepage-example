@@ -17,5 +17,6 @@
 - [x] Add tablet layout
 - [x] Separate SCSS code
 - [x] Add comments
-- [ ] Add footer to website
+- [x] Add footer to website
 - [ ] Change grunt watch html config to only run copy:html when html changes
+- [ ] Add selector for older browsers

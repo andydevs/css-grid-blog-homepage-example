@@ -57,7 +57,7 @@ CSS Grid
     @include on-mobile {
         // CSS Grid
         display: grid;
-        grid-template-rows: auto 1.5fr repeat(3, 1fr) repeat(7, auto);
+        grid-template-rows: auto 1.5fr repeat(3, 1fr) repeat(5, auto);
         grid-template-columns: repeat(2, 1fr);
 
         // Grid areas

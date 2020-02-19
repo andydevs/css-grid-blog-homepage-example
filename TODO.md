@@ -1,8 +1,4 @@
-# TO - DO
-
-## v1.2.0
-
-- [ ] Add selector for older browsers
+# TODO
 
 ## v1.1.0
 

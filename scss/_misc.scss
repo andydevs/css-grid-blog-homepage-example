@@ -39,8 +39,7 @@ Created: 2 - 17 - 2020
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    align-items: center;
-    justify-items: stretch;
+    place-items: center;
 
     // Font and spacing
     padding: $spacing-unit;

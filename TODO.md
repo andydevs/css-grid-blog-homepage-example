@@ -3,6 +3,7 @@
 ## v1.1.1
 
 - [x] Fixed mobile layout to fit content
+- [x] Wrapped footer content in div and centered it in footer rather than stretching
 
 ## v1.1.0
 

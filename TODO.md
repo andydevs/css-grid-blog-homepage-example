@@ -1,5 +1,11 @@
 # TO - DO
 
+## v1.1.0
+
+- [x] Add footer to website
+- [ ] Change grunt watch html config to only run copy:html when html changes
+- [ ] Add selector for older browsers
+
 ## v1.0.0
 
 - [x] Write dummy content in html (Don't work on menu content)
@@ -17,6 +23,3 @@
 - [x] Add tablet layout
 - [x] Separate SCSS code
 - [x] Add comments
-- [x] Add footer to website
-- [ ] Change grunt watch html config to only run copy:html when html changes
-- [ ] Add selector for older browsers

@@ -30,3 +30,23 @@ Created: 2 - 17 - 2020
     color: inherit;
     font-size: 24pt;
 }
+
+// Footer
+.footer {
+    grid-area: footer;
+
+    // NAHFAM 3: Thanos Snaps Himself
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: stretch;
+
+    // Font and spacing
+    padding: $spacing-unit;
+    font-style: italic;
+
+    // Coloring
+    background-image: linear-gradient(45deg, lighten($footer-background, 8%), $footer-background);
+    color: white;
+}

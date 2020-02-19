@@ -58,7 +58,7 @@ module.exports = function configGrunt(grunt) {
             },
             html: {
                 files: ['html/**/*.html'],
-                tasks: ['copy']
+                tasks: ['copy:html']
             }
         },
         connect: {

@@ -4542,7 +4542,7 @@ CSS Grid
       display: grid;
       grid-template-rows: repeat(8, 1fr);
       grid-template-columns: repeat(6, 1fr);
-      grid-template-areas: "menu     menu     menu     menu     menu     menu" "main     main     main     main     second-1 second-1" "main     main     main     main     second-1 second-1" "main     main     main     main     second-1 second-1" "second-2 second-2 second-2 second-2 second-1 second-1" "second-2 second-2 second-2 second-2 third-1  third-2" "second-3 second-3 second-3 third-3  third-4  third-5" "second-3 second-3 second-3 third-6  third-7  third-8" "second-3 second-3 second-3 footer   footer   footer"; } }
+      grid-template-areas: "menu     menu     menu     menu     menu     menu" "main     main     main     main     second-1 second-1" "main     main     main     main     second-1 second-1" "main     main     main     main     second-1 second-1" "second-2 second-2 second-2 second-2 second-1 second-1" "second-2 second-2 second-2 second-2 third-1  third-2" "second-3 second-3 second-3 third-3  third-4  third-5" "second-3 second-3 second-3 third-6  third-7  third-8" "footer   footer   footer   footer   footer   footer"; } }
   @media only screen and (max-width: 830px) {
     .layout {
       display: grid;

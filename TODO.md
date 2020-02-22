@@ -4,6 +4,7 @@
 
 - [x] Fixed mobile layout to fit content
 - [x] Wrapped footer content in div and centered it in footer rather than stretching
+- [x] Fix footer on tablet layout
 
 ## v1.1.0
 

@@ -4,6 +4,7 @@
 
 - [x] Changed directory where fontawesome fonts are being copied in grunt to `siteDirectory + '/fonts'`
 - [x] Removed redundant `justify-items: stretch`
+- [x] Used `display: flex` in button-group
 
 ## v1.1.1
 

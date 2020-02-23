@@ -4630,15 +4630,18 @@ Generic post snippet. Controls position of elements using CSS Grid.
     grid-area: snippet; }
   .post-snippet .buttons {
     grid-area: buttons;
-    text-align: right;
-    display: block; }
-    @media only screen and (max-width: 830px) {
-      .post-snippet .buttons {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
-        justify-items: stretch;
-        text-align: center; } }
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start; }
+    .post-snippet .buttons .button {
+      flex: 0;
+      margin: 0pt;
+      margin-left: 6pt;
+      text-align: center; }
+      @media only screen and (max-width: 830px) {
+        .post-snippet .buttons .button {
+          flex: 1;
+          margin: 0pt 6pt; } }
 
 .main {
   grid-area: main;

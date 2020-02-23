@@ -39,19 +39,28 @@ Generic post snippet. Controls position of elements using CSS Grid.
     */
     .buttons {
         grid-area: buttons;
-        text-align: right;
-        display: block;
 
-        // Mobile layout
-        @include on-mobile {
-            // Make a 1x1 grid!
-            display: grid;
-            grid-template-rows: 1fr;
-            grid-template-columns: 1fr;
-            justify-items: stretch;
+        // Set display to flex
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
 
-            // Align text
+        .button {
+            // Dont stretch
+            flex: 0;
+
+            // Set only margin left
+            margin: 0pt;
+            margin-left: $spacing-unit/2;
+
+            // Align internal text to center
             text-align: center;
+
+            @include on-mobile {
+                // Stretch and margin both sides
+                flex: 1;
+                margin: 0pt $spacing-unit/2;
+            }
         }
     }
 }

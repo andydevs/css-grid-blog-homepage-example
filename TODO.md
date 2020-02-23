@@ -1,5 +1,9 @@
 # TODO
 
+## v1.1.2
+
+- [x] Changed directory where fontawesome fonts are being copied in grunt to `siteDirectory + '/fonts'` 
+
 ## v1.1.1
 
 - [x] Fixed mobile layout to fit content

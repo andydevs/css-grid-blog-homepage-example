@@ -44,7 +44,7 @@ module.exports = function configGrunt(grunt) {
                     expand: true,
                     cwd: './node_modules/@fortawesome/fontawesome-free/webfonts',
                     src: '*',
-                    dest: '_public/fonts'
+                    dest: siteDirectory + '/fonts'
                 }]
             }
         },

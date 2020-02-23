@@ -2,7 +2,8 @@
 
 ## v1.1.2
 
-- [x] Changed directory where fontawesome fonts are being copied in grunt to `siteDirectory + '/fonts'` 
+- [x] Changed directory where fontawesome fonts are being copied in grunt to `siteDirectory + '/fonts'`
+- [x] Removed redundant justify-items: stretch
 
 ## v1.1.1
 

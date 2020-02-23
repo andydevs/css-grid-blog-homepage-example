@@ -20,11 +20,6 @@ Generic post snippet. Controls position of elements using CSS Grid.
     grid-template-columns: 1fr;
     grid-template-areas: "title" "snippet" "buttons";
 
-    // Mobile layout
-    @include on-mobile {
-        justify-items: stretch;
-    }
-
     // Post title
     .title {
         grid-area: title;

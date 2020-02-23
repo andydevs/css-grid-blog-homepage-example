@@ -4621,9 +4621,6 @@ Generic post snippet. Controls position of elements using CSS Grid.
     Post button set. Controls positioning of
     button using css grid on mobile only
     */ }
-  @media only screen and (max-width: 830px) {
-    .post-snippet {
-      justify-items: stretch; } }
   .post-snippet .title {
     grid-area: title; }
     @media only screen and (max-width: 830px) {

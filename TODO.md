@@ -2,7 +2,7 @@
 
 ## v1.1.3
 
-- [ ] Separate layout classes from styling classes (move to layouts file)
+- [x] Separate layout classes from styling classes (move to layouts file)
 
 ## v1.1.2
 

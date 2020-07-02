@@ -4527,67 +4527,6 @@ Author:  Anshul Kharbanda
 Created: 2 - 17 - 2020
 */
 /*
-The main layout component. This controls the 
-exact position of each element inside it using
-CSS Grid
-*/
-.main-layout {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  right: 0%;
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-areas: "main     main     main     second-1 second-1 second-1 second-1 menu     menu" "main     main     main     second-1 second-1 second-1 second-1 menu     menu" "main     main     main     second-2 second-2 third-1  third-2  third-3  third-4" "second-3 second-3 second-3 second-2 second-2 third-5  third-6  third-7  third-8" "second-3 second-3 second-3 second-2 second-2 footer   footer   footer   footer "; }
-  @media only screen and (max-width: 1200px) {
-    .main-layout {
-      display: grid;
-      grid-template-rows: repeat(8, 1fr);
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-areas: "menu     menu     menu     menu     menu     menu" "main     main     main     main     second-1 second-1" "main     main     main     main     second-1 second-1" "main     main     main     main     second-1 second-1" "second-2 second-2 second-2 second-2 second-1 second-1" "second-2 second-2 second-2 second-2 third-1  third-2" "second-3 second-3 second-3 third-3  third-4  third-5" "second-3 second-3 second-3 third-6  third-7  third-8" "footer   footer   footer   footer   footer   footer"; } }
-  @media only screen and (max-width: 830px) {
-    .main-layout {
-      display: grid;
-      grid-template-rows: auto 1.5fr repeat(3, 1fr) repeat(5, auto);
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "menu     menu" "main     main" "second-1 second-1" "second-2 second-2" "second-3 second-3" "third-1  third-2" "third-3  third-4" "third-5  third-6" "third-7  third-8" "footer   footer"; } }
-
-/*
-The menu layout component. This controls the 
-positions of the menu elements using CSS Grid
-*/
-.menu-layout {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  place-items: center;
-  grid-template-areas: "title  title  icon-1" "title  title  icon-2" "icon-3 icon-4 icon-5"; }
-  @media only screen and (max-width: 1200px) {
-    .menu-layout {
-      display: grid;
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-columns: repeat(4, 1fr);
-      place-items: center;
-      grid-template-areas: "title  title  title  icon-1" "icon-2 icon-3 icon-4 icon-5"; } }
-  @media only screen and (max-width: 830px) {
-    .menu-layout {
-      display: grid;
-      grid-template-rows: repeat(2, auto);
-      grid-template-columns: repeat(5, 1fr);
-      place-items: center;
-      grid-template-areas: "title  title  title  title  title" "icon-1 icon-2 icon-3 icon-4 icon-5"; } }
-
-/*
-CSS Grid Blog Homepage Example
-
-Experiments in using CSS grid to create responsive websites
-
-Author:  Anshul Kharbanda
-Created: 2 - 17 - 2020
-*/
-/*
 Menu bar/box. Also uses CSS Grid to control position of
 title and icons.
 */
@@ -4826,5 +4765,66 @@ Generic post snippet. Controls position of elements using CSS Grid.
     color: white; }
     .third-12 .button:hover {
       background-color: #2d343a; }
+
+/*
+CSS Grid Blog Homepage Example
+
+Experiments in using CSS grid to create responsive websites
+
+Author:  Anshul Kharbanda
+Created: 2 - 17 - 2020
+*/
+/*
+The main layout component. This controls the 
+exact position of each element inside it using
+CSS Grid
+*/
+.main-layout {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-areas: "main     main     main     second-1 second-1 second-1 second-1 menu     menu" "main     main     main     second-1 second-1 second-1 second-1 menu     menu" "main     main     main     second-2 second-2 third-1  third-2  third-3  third-4" "second-3 second-3 second-3 second-2 second-2 third-5  third-6  third-7  third-8" "second-3 second-3 second-3 second-2 second-2 footer   footer   footer   footer "; }
+  @media only screen and (max-width: 1200px) {
+    .main-layout {
+      display: grid;
+      grid-template-rows: repeat(8, 1fr);
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas: "menu     menu     menu     menu     menu     menu" "main     main     main     main     second-1 second-1" "main     main     main     main     second-1 second-1" "main     main     main     main     second-1 second-1" "second-2 second-2 second-2 second-2 second-1 second-1" "second-2 second-2 second-2 second-2 third-1  third-2" "second-3 second-3 second-3 third-3  third-4  third-5" "second-3 second-3 second-3 third-6  third-7  third-8" "footer   footer   footer   footer   footer   footer"; } }
+  @media only screen and (max-width: 830px) {
+    .main-layout {
+      display: grid;
+      grid-template-rows: auto 1.5fr repeat(3, 1fr) repeat(5, auto);
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "menu     menu" "main     main" "second-1 second-1" "second-2 second-2" "second-3 second-3" "third-1  third-2" "third-3  third-4" "third-5  third-6" "third-7  third-8" "footer   footer"; } }
+
+/*
+The menu layout component. This controls the 
+positions of the menu elements using CSS Grid
+*/
+.menu-layout {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  grid-template-areas: "title  title  icon-1" "title  title  icon-2" "icon-3 icon-4 icon-5"; }
+  @media only screen and (max-width: 1200px) {
+    .menu-layout {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      place-items: center;
+      grid-template-areas: "title  title  title  icon-1" "icon-2 icon-3 icon-4 icon-5"; } }
+  @media only screen and (max-width: 830px) {
+    .menu-layout {
+      display: grid;
+      grid-template-rows: repeat(2, auto);
+      grid-template-columns: repeat(5, 1fr);
+      place-items: center;
+      grid-template-areas: "title  title  title  title  title" "icon-1 icon-2 icon-3 icon-4 icon-5"; } }
 
 /*# sourceMappingURL=main.css.map */

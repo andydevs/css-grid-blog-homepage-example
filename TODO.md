@@ -1,5 +1,9 @@
 # TODO
 
+## v1.1.3
+
+- [ ] Separate layout classes from styling classes (move to layouts file)
+
 ## v1.1.2
 
 - [x] Changed directory where fontawesome fonts are being copied in grunt to `siteDirectory + '/fonts'`

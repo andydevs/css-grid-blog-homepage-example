@@ -4487,6 +4487,12 @@ Experiments in using CSS grid to create responsive websites
 Author:  Anshul Kharbanda
 Created: 2 - 17 - 2020
 */
+* {
+  font-family: "Calibri Light", sans-serif; }
+
+p {
+  font-size: 14pt; }
+
 .button {
   text-decoration: none;
   padding: 6pt 12pt;
@@ -4525,7 +4531,7 @@ The main layout component. This controls the
 exact position of each element inside it using
 CSS Grid
 */
-.layout {
+.main-layout {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -4534,21 +4540,44 @@ CSS Grid
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(9, 1fr);
-  grid-template-areas: "main     main     main     second-1 second-1 second-1 second-1 menu     menu" "main     main     main     second-1 second-1 second-1 second-1 menu     menu" "main     main     main     second-2 second-2 third-1  third-2  third-3  third-4" "second-3 second-3 second-3 second-2 second-2 third-5  third-6  third-7  third-8" "second-3 second-3 second-3 second-2 second-2 footer   footer   footer   footer ";
-  font-family: "Calibri Light", sans-serif;
-  font-size: 14pt; }
+  grid-template-areas: "main     main     main     second-1 second-1 second-1 second-1 menu     menu" "main     main     main     second-1 second-1 second-1 second-1 menu     menu" "main     main     main     second-2 second-2 third-1  third-2  third-3  third-4" "second-3 second-3 second-3 second-2 second-2 third-5  third-6  third-7  third-8" "second-3 second-3 second-3 second-2 second-2 footer   footer   footer   footer "; }
   @media only screen and (max-width: 1200px) {
-    .layout {
+    .main-layout {
       display: grid;
       grid-template-rows: repeat(8, 1fr);
       grid-template-columns: repeat(6, 1fr);
       grid-template-areas: "menu     menu     menu     menu     menu     menu" "main     main     main     main     second-1 second-1" "main     main     main     main     second-1 second-1" "main     main     main     main     second-1 second-1" "second-2 second-2 second-2 second-2 second-1 second-1" "second-2 second-2 second-2 second-2 third-1  third-2" "second-3 second-3 second-3 third-3  third-4  third-5" "second-3 second-3 second-3 third-6  third-7  third-8" "footer   footer   footer   footer   footer   footer"; } }
   @media only screen and (max-width: 830px) {
-    .layout {
+    .main-layout {
       display: grid;
       grid-template-rows: auto 1.5fr repeat(3, 1fr) repeat(5, auto);
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "menu     menu" "main     main" "second-1 second-1" "second-2 second-2" "second-3 second-3" "third-1  third-2" "third-3  third-4" "third-5  third-6" "third-7  third-8" "footer   footer"; } }
+
+/*
+The menu layout component. This controls the 
+positions of the menu elements using CSS Grid
+*/
+.menu-layout {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  grid-template-areas: "title  title  icon-1" "title  title  icon-2" "icon-3 icon-4 icon-5"; }
+  @media only screen and (max-width: 1200px) {
+    .menu-layout {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      place-items: center;
+      grid-template-areas: "title  title  title  icon-1" "icon-2 icon-3 icon-4 icon-5"; } }
+  @media only screen and (max-width: 830px) {
+    .menu-layout {
+      display: grid;
+      grid-template-rows: repeat(2, auto);
+      grid-template-columns: repeat(5, 1fr);
+      place-items: center;
+      grid-template-areas: "title  title  title  title  title" "icon-1 icon-2 icon-3 icon-4 icon-5"; } }
 
 /*
 CSS Grid Blog Homepage Example
@@ -4566,26 +4595,7 @@ title and icons.
   grid-area: menu;
   padding: 12pt;
   background-image: linear-gradient(45deg, #515151, #444);
-  color: white;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  place-items: center;
-  grid-template-areas: "title  title  icon-1" "title  title  icon-2" "icon-3 icon-4 icon-5"; }
-  @media only screen and (max-width: 1200px) {
-    .menu {
-      display: grid;
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-columns: repeat(4, 1fr);
-      place-items: center;
-      grid-template-areas: "title  title  title  icon-1" "icon-2 icon-3 icon-4 icon-5"; } }
-  @media only screen and (max-width: 830px) {
-    .menu {
-      display: grid;
-      grid-template-rows: repeat(2, auto);
-      grid-template-columns: repeat(5, 1fr);
-      place-items: center;
-      grid-template-areas: "title  title  title  title  title" "icon-1 icon-2 icon-3 icon-4 icon-5"; } }
+  color: white; }
   .menu .title {
     grid-area: title;
     margin: 12pt; }
@@ -4619,7 +4629,7 @@ Generic post snippet. Controls position of elements using CSS Grid.
   grid-template-areas: "title" "snippet" "buttons";
   /*
     Post button set. Controls positioning of
-    button using css grid on mobile only
+    button using flexbox
     */ }
   .post-snippet .title {
     grid-area: title; }
@@ -4635,13 +4645,11 @@ Generic post snippet. Controls position of elements using CSS Grid.
     align-items: flex-start; }
     .post-snippet .buttons .button {
       flex: 0;
-      margin: 0pt;
-      margin-left: 6pt;
+      margin: 0pt 6pt;
       text-align: center; }
       @media only screen and (max-width: 830px) {
         .post-snippet .buttons .button {
-          flex: 1;
-          margin: 0pt 6pt; } }
+          flex: 1; } }
 
 .main {
   grid-area: main;

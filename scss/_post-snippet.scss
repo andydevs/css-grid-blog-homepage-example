@@ -35,32 +35,26 @@ Generic post snippet. Controls position of elements using CSS Grid.
 
     /*
     Post button set. Controls positioning of
-    button using css grid on mobile only
+    button using flexbox
     */
     .buttons {
         grid-area: buttons;
 
-        // Set display to flex
+        // Use flex box for rows
         display: flex;
         flex-direction: row-reverse;
         align-items: flex-start;
 
         .button {
-            // Dont stretch
+            // Stretch on mobile only
             flex: 0;
-
-            // Set only margin left
-            margin: 0pt;
-            margin-left: $spacing-unit/2;
-
-            // Align internal text to center
-            text-align: center;
-
             @include on-mobile {
-                // Stretch and margin both sides
                 flex: 1;
-                margin: 0pt $spacing-unit/2;
             }
+
+            // Button and text alignment
+            margin: 0pt $spacing-unit/2;
+            text-align: center;
         }
     }
 }

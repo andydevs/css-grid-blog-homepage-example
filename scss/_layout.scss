@@ -12,7 +12,7 @@ The main layout component. This controls the
 exact position of each element inside it using
 CSS Grid
 */
-.layout {
+.main-layout {
     // Positioning
     position: absolute;
     top: 0%;
@@ -73,8 +73,44 @@ CSS Grid
             "third-7  third-8"
             "footer   footer";
     }
+}
 
-    // Font styling
-    font-family: $font-family;
-    font-size: $font-size;
+/*
+The menu layout component. This controls the 
+positions of the menu elements using CSS Grid
+*/
+.menu-layout {
+    // Desktop layout
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+
+    // Desktop Layout
+    grid-template-areas: 
+        "title  title  icon-1"
+        "title  title  icon-2"
+        "icon-3 icon-4 icon-5";
+
+    // Tablet layout
+    @include on-tablet {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        place-items: center;
+        grid-template-areas: 
+            "title  title  title  icon-1"
+            "icon-2 icon-3 icon-4 icon-5";
+    }
+
+    // Mobile layout
+    @include on-mobile {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(5, 1fr);
+        place-items: center;
+        grid-template-areas: 
+            "title  title  title  title  title"
+            "icon-1 icon-2 icon-3 icon-4 icon-5";
+    }
 }

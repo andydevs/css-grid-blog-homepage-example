@@ -70,17 +70,25 @@ module.exports = function configGrunt(grunt) {
                     open: true
                 }
             }
+        },
+        'gh-pages': {
+            options: {
+                base: siteDirectory
+            },
+            src: ['**/*']
         }
     })
 
     // Load tasks
     grunt.loadNpmTasks('grunt-sass')
+    grunt.loadNpmTasks('grunt-contrib-copy')
     grunt.loadNpmTasks('grunt-contrib-watch')
     grunt.loadNpmTasks('grunt-contrib-connect')
-    grunt.loadNpmTasks('grunt-contrib-copy')
+    grunt.loadNpmTasks('grunt-gh-pages')
 
     // Register tasks
     grunt.registerTask('build', ['sass', 'copy'])
     grunt.registerTask('devserver', ['build', 'connect', 'watch'])
+    grunt.registerTask('deploy', ['build', 'gh-pages'])
     grunt.registerTask('default', ['build'])
 }

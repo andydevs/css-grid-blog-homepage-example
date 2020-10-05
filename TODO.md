@@ -4,8 +4,8 @@ CSS Grid Blog Homepage Example: TODO
 Backlog
 --------------------------------------------------------------------------------------------------------
 
+- [x] Publish to GitHub Pages
 - [ ] Renamed output dir to `public`
-- [ ] Publish to GitHub Pages
 
 Changelog
 --------------------------------------------------------------------------------------------------------

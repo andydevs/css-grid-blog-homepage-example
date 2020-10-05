@@ -1,27 +1,37 @@
-# TODO
+CSS Grid Blog Homepage Example: TODO
+========================================================================================================
 
-## v1.1.3
+Backlog
+--------------------------------------------------------------------------------------------------------
+
+- [ ] Renamed output dir to `public`
+- [ ] Publish to GitHub Pages
+
+Changelog
+--------------------------------------------------------------------------------------------------------
+
+### v1.1.3
 
 - [x] Separate layout classes from styling classes (move to layouts file)
 
-## v1.1.2
+### v1.1.2
 
 - [x] Changed directory where fontawesome fonts are being copied in grunt to `siteDirectory + '/fonts'`
 - [x] Removed redundant `justify-items: stretch`
 - [x] Used `display: flex` in button-group
 
-## v1.1.1
+### v1.1.1
 
 - [x] Fixed mobile layout to fit content
 - [x] Wrapped footer content in div and centered it in footer rather than stretching
 - [x] Fix footer on tablet layout
 
-## v1.1.0
+### v1.1.0
 
 - [x] Add footer to website
 - [x] Change grunt watch html config to only run copy:html when html changes
 
-## v1.0.0
+### v1.0.0
 
 - [x] Write dummy content in html (Don't work on menu content)
 - [x] Style desktop main layout using grid

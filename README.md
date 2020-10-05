@@ -1,9 +1,5 @@
-CSS Grid Blog Homepage Example
-=================================================================
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d7a6d928-a965-42d4-8755-8a49b693cffe/deploy-status)](https://app.netlify.com/sites/css-grid-blog-homepage-example/deploys)
-
-[View the live website](https://css-grid-blog-homepage-example.netlify.com/)
+[CSS Grid Blog Homepage Example](https://andydevs.github.io/css-grid-blog-homepage-example/)
+============================================================================================
 
 Experiments in using CSS grid to create responsive websites
 
@@ -14,7 +10,7 @@ Experiments in using CSS grid to create responsive websites
 ![Mobile](./doc-images/grid-mobile.jpg)
 
 Development
------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 
 Make sure your environment is configured to development mode.
 
@@ -39,6 +35,6 @@ Otherwise, type `./node_modules/.bin/grunt devserver`.
 This will also run grunt watch, so the webpage will livereload
 when you make changes.
 
----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 
 _Created by Anshul Kharbanda (andydevs)_

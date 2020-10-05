@@ -5,7 +5,7 @@
  * designed using CSS Grid
  */
 const sass = require('node-sass')
-const siteDirectory = '_public/'
+const siteDirectory = 'public/'
 
 /**
  * Configure grunt

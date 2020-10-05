@@ -4,11 +4,13 @@ CSS Grid Blog Homepage Example: TODO
 Backlog
 --------------------------------------------------------------------------------------------------------
 
-- [x] Publish to GitHub Pages
-- [ ] Renamed output dir to `public`
-
 Changelog
 --------------------------------------------------------------------------------------------------------
+
+### v1.1.4
+
+- [x] Publish to GitHub Pages
+- [x] Renamed output dir to `public`
 
 ### v1.1.3
 
